@@ -1,0 +1,49 @@
+/* html{
+    font-size: 40px;
+
+}
+.mainDiv{
+    font-size: 32px;
+}
+
+.div1{
+    font-size: 2em;
+}
+
+.div2{
+    font-size: 2rem;
+}
+
+.div3{
+
+} */
+
+ body{
+    background: linear-gradient(to bottom, #72ffff, rgba(204,229,255,0.4));
+    font-size: 1.15rem;
+    text-align: justify;
+    font-family: cursive;
+}
+/* #title{
+    color: rgb(186,133,9);
+    font-family: cursive;
+}
+
+#service-image{
+    height: 400px;
+    width: 70vh;
+    background: radial-gradient(circle, #DFF6FF 20%,#47B5FF 40%,#1363DF 55%);
+    border: 10px solid rgb(28,28,79);
+} */
+
+table,th,td{
+    border: 2px,solid,brown;
+    text-align: center;
+}
+table{
+    margin-top: 20px;
+    width: 100%;
+}
+
+
+
