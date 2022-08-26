@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="n1" id="n1" placeholder="Enter a number">
+    <button onclick="myFn()">Click</button>
+    <p id="p1"></p>
+    <p id="err"></p>
+    <script>
+        function myFn(){
+            function  myCal(){
+                let a=document.getElementById("n1").value;
+                if(!isNaN(a)){
+                    a=Number(a);
+                    if(a<18){
+                        throw "Its too low";
+                    }
+                    if(a>60){
+                        throw "Its too high";
+                    }else{
+                        alert("Its Valid")
+                    }
+                    }else{
+                        throw "It is not a number";
+                    }
+                }
+            }
+            try{
+                myCal();
+            }catch(err){
+                document.getElementById("p1").innerHTML=err;
+            }
+            // try{
+            //     if(!isNaN(a)){
+            //         a=Number(a);
+            //         if(a<18){
+            //             throw "Its too low";
+            //         }
+            //         if(a>60){
+            //             throw "Its too high";
+            //         }else{
+            //             alert("Its Valid")
+            //         }
+            //     }else{
+            //         throw "It is not a number";
+            //     }
+            // }
+            // catch(err){
+            //     document.getElementById("p1").innerHTML=err;
+            // }
+            // }
+    </script>
+    <!-- <script>
+        let a=0;
+        a+=1;
+        try{
+            alertt("Hi!!!");
+        }catch(err){
+            document.getElementById("err").innerHTML=err.message;
+        }
+        a+=1;
+        document.getElementById("p1").innerHTML=a;
+    </script> -->
+</body>
+</html>
